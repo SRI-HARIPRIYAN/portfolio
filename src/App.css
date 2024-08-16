@@ -1,0 +1,15 @@
+body {
+	overflow: hidden;
+}
+.toClose {
+	position: absolute;
+	color: white;
+	top: 70px;
+
+	transition: 0.35s;
+}
+.toOpen {
+	position: absolute;
+	right: 40px;
+	transition: 0.35s;
+}
