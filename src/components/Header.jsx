@@ -8,7 +8,7 @@ const Header = () => {
 		change.classList.toggle("toOpen");
 	};
 	return (
-		<div className=" w-full fixed  ">
+		<div className=" w-full fixed z-10  ">
 			<header
 				className={`bg-[#18092e] text-yellow-50 h-24 px-8 flex justify-between items-center md:justify-around lg:h-28 `}
 			>
