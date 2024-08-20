@@ -2,8 +2,8 @@ import React from "react";
 
 const MiddleComponent = () => {
 	return (
-		<section className=" text-white px-5 flex flex-col py-4 gap-2">
-			<h1 className="opacity-75">ABOUT ME</h1>
+		<section className=" text-white px-5 flex flex-col py-4 gap-4 my-3">
+			<h1 className="opacity-75 text-2xl">ABOUT ME</h1>
 			<h2 className=" text-2xl font-semibold">
 				Crafting reliable web applications: My journey as a Software
 				Developer

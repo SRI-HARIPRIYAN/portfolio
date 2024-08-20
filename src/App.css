@@ -23,6 +23,12 @@ body {
 	cursor: pointer;
 }
 
+.contact {
+	background: url(./assets/contact-bg.jpg);
+}
+::-webkit-input-placeholder {
+	font-size: 0.8rem;
+}
 /* ::-webkit-scrollbar-track {
 	cursor: pointer;
 	border-radius: 6px;

@@ -3,7 +3,7 @@ import { FaArrowCircleDown } from "react-icons/fa";
 const Welcome = () => {
 	return (
 		<>
-			<div className=" w-full px-10 flex flex-col gap-2 ">
+			<div className=" w-full px-10 flex flex-col  gap-2 ">
 				<h1 className="text-2xl font-bold md:text-3xl lg:text-5xl ">
 					<span className=" text-start text-4xl md:text-6xl lg:text-7xl ">
 						Hello World!
@@ -35,7 +35,7 @@ const Welcome = () => {
 				</button>
 			</div>
 			<div className="flex flex-col items-center gap-5">
-				<button className="bg-blue-300 hover:bg-slate-900 hover:text-white duration-300 p-3  w-44 text-black rounded-full">
+				<button className="bg-blue-300 hover:bg-slate-900 hover:text-white hover:bg-opacity-75 duration-300 p-3  w-44 text-black rounded-full">
 					Scroll for more
 				</button>
 				<FaArrowCircleDown className=" animate-updown text-2xl inline-block text-white" />
