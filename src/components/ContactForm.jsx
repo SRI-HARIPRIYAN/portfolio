@@ -5,9 +5,10 @@ const ContactForm = () => {
 	const [from_name, setFromName] = useState("");
 	const [from_email, setFromEmail] = useState("");
 	const [message, setMessage] = useState("");
+	const [loading, setLoading] = useState(false);
 	const sendEmail = (e) => {
 		e.preventDefault();
-
+		setLoading(true);
 		emailjs
 			.send(
 				"service_v1zkbl4",
@@ -31,6 +32,10 @@ const ContactForm = () => {
 					console.log("FAILED...", error);
 				}
 			);
+		setFromName("");
+		setFromEmail("");
+		setMessage("");
+		setLoading(false);
 	};
 	return (
 		<div className="md:w-1/2">
@@ -93,7 +98,9 @@ const ContactForm = () => {
 				</div>
 				<button
 					type="submit"
-					className=" w-fit mx-auto bg-blue-500 text-white  px-5 py-2 rounded-md"
+					className={` w-fit mx-auto ${
+						loading ? "bg-green-500" : "bg-blue-500"
+					} text-white  px-5 py-2 rounded-md`}
 				>
 					Send
 				</button>
