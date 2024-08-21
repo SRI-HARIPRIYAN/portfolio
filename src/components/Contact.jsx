@@ -3,7 +3,7 @@ import github from "../assets/github-logo.jpg";
 import insta from "../assets/insta_logo.jpg";
 import linkedin from "../assets/linkin-logo.png";
 import ContactForm from "./ContactForm";
-
+import resume from "../assets/documents/MyResume.pdf";
 const Contact = () => {
 	return (
 		<div className="pt-24" id="contact">
@@ -28,7 +28,7 @@ const Contact = () => {
 				</p>
 				<p className="opacity-75">
 					For more info, here's my{" "}
-					<a href="">
+					<a href={resume} download>
 						<span className=" text-green-400 underline underline-offset-2d decoration-white opacity-100">
 							resume
 						</span>
