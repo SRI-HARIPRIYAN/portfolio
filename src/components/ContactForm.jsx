@@ -48,6 +48,8 @@ const ContactForm = () => {
 						name="from_name"
 						id="name"
 						placeholder="Your name"
+						value={from_name}
+						onChange={(e) => setFromName(e.target.value)}
 					/>
 				</div>
 				<div className="flex flex-col gap-2">
@@ -60,6 +62,8 @@ const ContactForm = () => {
 						name="from_email"
 						id="email"
 						placeholder="me@email.com"
+						value={from_email}
+						onChange={(e) => setFromEmail(e.target.value)}
 					/>
 				</div>
 				{/* <div className="flex flex-col gap-2">
@@ -83,6 +87,8 @@ const ContactForm = () => {
 						name="message"
 						id="message"
 						placeholder="Hey Sri"
+						value={message}
+						onChange={(e) => setMessage(e.target.value)}
 					></textarea>
 				</div>
 				<button
