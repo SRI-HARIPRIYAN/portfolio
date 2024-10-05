@@ -41,7 +41,7 @@ const ContactForm = () => {
 		<div className="md:w-1/2">
 			<form
 				onSubmit={sendEmail}
-				className="border-2 border-purple-700 md:w-[90%] flex flex-col gap-5 p-5 rounded-lg "
+				className="border-2 border-purple-700 md:w-[90%] flex flex-col gap-5 p-5 rounded-lg backdrop-blur-md "
 			>
 				<div className="flex flex-col gap-2 ">
 					<label htmlFor="name" className="font-semibold">
@@ -88,10 +88,10 @@ const ContactForm = () => {
 						Message
 					</label>
 					<textarea
-						className="bg-black bg-opacity-50 rounded-sm  pl-2"
+						className="bg-black bg-opacity-50 rounded-sm min-h-10  pl-2 py-2 "
 						name="message"
 						id="message"
-						placeholder="Hey Sri"
+						placeholder="Hey Sri How its going?"
 						value={message}
 						onChange={(e) => setMessage(e.target.value)}
 					></textarea>

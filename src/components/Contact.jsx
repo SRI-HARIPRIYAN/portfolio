@@ -6,7 +6,7 @@ import ContactForm from "./ContactForm";
 import resume from "../assets/documents/MyResume.pdf";
 const Contact = () => {
 	return (
-		<div className="pt-24" id="contact">
+		<section className="pt-24" id="contact">
 			<div
 				className="contact border-4 border-purple-700 text-white  md:p-6 lg:p-10 bg-center bg-cover
 			 bg-opacity-90 flex flex-col gap-5 "
@@ -79,7 +79,7 @@ const Contact = () => {
 					<ContactForm />
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

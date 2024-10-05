@@ -7,7 +7,7 @@ const AboutMe = () => {
 	const databases = ["MongoDB - Basics"];
 
 	return (
-		<div
+		<section
 			id="about"
 			className="flex flex-col gap-5 text-white p-5 md:p-20 pt-24 lg:pt-28  mt-10"
 		>
@@ -40,7 +40,7 @@ const AboutMe = () => {
 			</div>
 			<hr className="opacity-75" />
 			<div className="flex flex-col gap-5">
-				<section className="flex flex-col md:flex-row gap-5">
+				<div className="flex flex-col md:flex-row gap-5">
 					<div className="md:w-1/2 text-5xl h-full md:text-6xl lg:text-7xl">
 						<h2 className="">My capabilites</h2>
 					</div>
@@ -79,7 +79,7 @@ const AboutMe = () => {
 							))}
 						</div>
 					</div>
-				</section>
+				</div>
 				{/* <hr className="opacity-75" /> */}
 				{/* <section className="flex flex-col md:flex-row gap-5">
 					<h2 className="md:w-1/2 text-5xl h-full md:text-6xl lg:text-7xl">
@@ -94,7 +94,7 @@ const AboutMe = () => {
 					</div>
 				</section> */}
 			</div>
-		</div>
+		</section>
 	);
 };
 

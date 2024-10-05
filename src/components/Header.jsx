@@ -1,12 +1,37 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Header = () => {
+	const [activeSection, setActiveSection] = useState("home");
 	const [isMenuClicked, setIsMenuClicked] = useState(false);
 	const handleClick = () => {
 		const change = document.querySelector(".toChange");
 		setIsMenuClicked(!isMenuClicked);
 		change.classList.toggle("toOpen");
 	};
+
+	useEffect(() => {
+		const sections = document.querySelectorAll("section");
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						const sectionId = entry.target.id;
+						setActiveSection(sectionId);
+					}
+				});
+			},
+			{ threshold: 0.4 }
+		);
+		sections.forEach((section) => {
+			observer.observe(section);
+		});
+		return () => {
+			sections.forEach((section) => {
+				observer.unobserve(section);
+			});
+		};
+	}, []);
+	console.log(activeSection);
 	return (
 		<div className=" w-full fixed top-0 z-10  ">
 			<header
@@ -18,17 +43,34 @@ const Header = () => {
 				<nav className="hidden md:flex md:justify-around md:gap-3 lg:gap-5 font-poppins text-md text-white font-semibold border-2 p-1.5 rounded-full bg-[#4c3675] ">
 					<a
 						href="#home"
-						className="active:bg-[#f5f5f5] px-5 py-3 rounded-full hover:underline decoration-white"
+						className={`${
+							activeSection === "home" ? "activeHead" : ""
+						} px-5 py-3 rounded-full`}
 					>
 						Home
 					</a>
-					<a href="#projects" className=" px-5 py-3 rounded-full">
+					<a
+						href="#projects"
+						className={`${
+							activeSection === "projects" ? "activeHead" : ""
+						} px-5 py-3 rounded-full`}
+					>
 						Projects
 					</a>
-					<a href="#about" className=" px-5 py-3 rounded-full">
+					<a
+						href="#about"
+						className={`${
+							activeSection === "about" ? "activeHead" : ""
+						} px-5 py-3 rounded-full`}
+					>
 						About
 					</a>
-					<a href="#contact" className=" px-5 py-3 rounded-full">
+					<a
+						href="#contact"
+						className={`${
+							activeSection === "contact" ? "activeHead" : ""
+						} px-5 py-3 rounded-full`}
+					>
 						Contact
 					</a>
 				</nav>

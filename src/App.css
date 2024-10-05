@@ -29,6 +29,18 @@ body {
 ::-webkit-input-placeholder {
 	font-size: 0.8rem;
 }
+
+.activeHead {
+	background-color: white;
+	color: black;
+}
+.footer-a {
+	color: whitesmoke;
+}
+.footer-a:hover {
+	text-shadow: #fc0 1px 0 40px;
+	font-size: large;
+}
 /* ::-webkit-scrollbar-track {
 	cursor: pointer;
 	border-radius: 6px;

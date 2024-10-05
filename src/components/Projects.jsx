@@ -5,7 +5,10 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const Projects = () => {
 	return (
-		<div id="projects" className="p-5 pt-24 lg:pt-28 flex flex-col gap-8  ">
+		<section
+			id="projects"
+			className="p-5 pt-24 lg:pt-28 flex flex-col gap-8 min-h-fit  "
+		>
 			<div className="text-white flex flex-col gap-2">
 				<h2 className="text-2xl md:text-3xl lg:text-4xl font-medium">
 					Featured projects
@@ -15,7 +18,7 @@ const Projects = () => {
 					passion for full-stack development.
 				</p>
 			</div>
-			<section className="flex flex-col p-5  md:flex-row gap-2 md:gap-4 lg:gap-14  ">
+			<div className="flex flex-col p-5  md:flex-row gap-2 md:gap-4 lg:gap-14  ">
 				<div className=" relative bg-[#0b003b] p-5 py-24 md:w-1/2 rounded-lg border-2 border-blue-700 ">
 					<h3 className="absolute top-5 left-5 text-white bg-purple-700 p-2 px-3 rounded-md">
 						C4G - Chat for gamers
@@ -45,8 +48,8 @@ const Projects = () => {
 						<GoArrowUpRight className="inline ml-2 text-lg" />
 					</a>
 				</div>
-			</section>
-			<section className="flex flex-col p-5  md:flex-row gap-2 md:gap-4 lg:gap-14  ">
+			</div>
+			<div className="flex flex-col p-5  md:flex-row gap-2 md:gap-4 lg:gap-14  ">
 				<div className=" relative bg-[#0b003b] p-5 py-24 md:w-1/2 rounded-lg border-2 border-blue-700 ">
 					<h3 className="absolute top-5 left-5 text-white bg-purple-700 p-2 px-3 rounded-md">
 						Eco-cart
@@ -78,8 +81,8 @@ const Projects = () => {
 						<GoArrowUpRight className="inline ml-2 text-lg" />
 					</a>
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
 	);
 };
 
