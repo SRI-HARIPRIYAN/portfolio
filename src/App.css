@@ -29,10 +29,18 @@ body {
 ::-webkit-input-placeholder {
 	font-size: 0.8rem;
 }
-
+aside a {
+	background-color: white;
+	color: black;
+	text-align: center;
+}
 .activeHead {
 	background-color: white;
 	color: black;
+}
+.activeAside-nav {
+	background-color: violet;
+	color: white;
 }
 .footer-a {
 	color: whitesmoke;

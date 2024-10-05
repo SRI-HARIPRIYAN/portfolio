@@ -30,14 +30,20 @@ const Welcome = () => {
 				<p>Welcome to my page</p>
 			</div>
 			<div>
-				<button className=" w-44  hover:bg-slate-900 hover:bg-opacity-75 duration-300 bg-sky-500   p-4 py-3 rounded-full">
+				<a
+					href="#contact"
+					className=" w-44  hover:bg-slate-900 hover:bg-opacity-75 duration-300 bg-sky-500   p-4 py-3 rounded-full"
+				>
 					Lets talk
-				</button>
+				</a>
 			</div>
 			<div className="flex flex-col items-center gap-5">
-				<button className="bg-blue-300 hover:bg-slate-900 hover:text-white hover:bg-opacity-75 duration-300 p-3  w-44 text-black rounded-full">
+				<a
+					href="#projects"
+					className="bg-blue-300 hover:bg-slate-900 hover:text-white hover:bg-opacity-75 duration-300 p-3  w-44 text-black rounded-full text-center"
+				>
 					Scroll for more
-				</button>
+				</a>
 				<FaArrowCircleDown className=" animate-updown text-2xl inline-block text-white" />
 			</div>
 		</>

@@ -96,28 +96,36 @@ const Header = () => {
 				<a
 					href="#home"
 					onClick={() => setIsMenuClicked(!isMenuClicked)}
-					className="bg-[#f5f5f5] px-5 py-3 rounded-full"
+					className={` ${
+						activeSection === "home" ? "activeAside-nav" : ""
+					}   px-5 py-2 rounded-full `}
 				>
 					Home
 				</a>
 				<a
 					href="#projects"
 					onClick={() => setIsMenuClicked(!isMenuClicked)}
-					className="bg-[#f5f5f5] px-5 py-3 rounded-full"
+					className={`${
+						activeSection === "projects" ? "activeAside-nav" : ""
+					}  px-5 py-2 rounded-full`}
 				>
 					Projects
 				</a>
 				<a
 					href="#about"
 					onClick={() => setIsMenuClicked(!isMenuClicked)}
-					className="bg-[#f5f5f5] px-5 py-3 rounded-full"
+					className={`${
+						activeSection === "about" ? "activeAside-nav" : ""
+					}   px-5 py-2 rounded-full`}
 				>
 					About
 				</a>
 				<a
 					href="#contact"
 					onClick={() => setIsMenuClicked(!isMenuClicked)}
-					className="bg-[#f5f5f5] px-5 py-3 rounded-full"
+					className={`${
+						activeSection === "contact" ? "activeAside-nav" : ""
+					}   px-5 py-2 rounded-full`}
 				>
 					Contact
 				</a>
